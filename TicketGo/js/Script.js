@@ -21,17 +21,14 @@ movies.forEach(movie => {
 
     const card = document.createElement("div");
     card.classList.add("card-filme");
-
-    const title = document.createElement("h3");
-    title.innerText = movie.name;
-
     const img = document.createElement("img");
     img.src = movie.image;
-
     img.addEventListener("click", () => {
         openFilm(movie);
     });
 
+    const title = document.createElement("h3");
+    title.innerText = movie.name;
     const gender = document.createElement("h3");
     gender.innerText = movie.gender;
     const duration = document.createElement("h4");
@@ -39,8 +36,9 @@ movies.forEach(movie => {
    
 
     
-    card.appendChild(title);
+
     card.appendChild(img);
+    card.appendChild(title);
     card.appendChild(gender);
     card.appendChild(duration);
 

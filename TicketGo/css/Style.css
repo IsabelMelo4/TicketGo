@@ -7,7 +7,7 @@
 --backgound-color: #030F26 ;
 --font-color: white;
 --button-color : #0C3140; 
---card-color:#00010D; 
+--card-color:#292d44; 
 
 
 }
@@ -100,52 +100,66 @@ section h2:hover::after {
 }
 
 
-.card-filme {
-  background-color: var(--card-color);
-  border-radius: 12px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  max-width: 1080px;
-  margin: 0 auto;
-  transition: 0.3s;
-}
+
 
 .card-filme:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgb(255, 255, 255);
 }
 
+.card-filme {
+  background-color: var(--card-color);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.3s;
+}
 
 .card-filme img {
-  width: 100%;
-  height: 400px;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
+  width: 100%;      
+  height: 600px;    
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center; 
+  display: block;
 }
 
 .card-filme h3 {
   font-family: var(--font-film);
-  font-size: 20px;
-  margin-top: 10px;
-  min-height: 50px;
-  
-  
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  align-items: end;
+
 }
 
 .card-filme h4{
   font-size: 13px;
   min-height: 50px;
-  
-  
 }
 
 #status {
   margin-top: 20px;
   text-align: center;
+}
+
+.trailers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+
+}
+
+#movieTrailer{
+  border-radius: 20px;
+
 }
